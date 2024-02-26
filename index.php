@@ -12,6 +12,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <ul>
+        <?php foreach ($hotels as $hotel): ?>
+
+            <li> <?= $hotel["name"] ?></li>
+            
+        <?php endforeach;  ?>
+
+    </ul>
 </body>
 </html>
