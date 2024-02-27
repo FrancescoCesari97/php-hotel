@@ -26,19 +26,26 @@
             <div class="card-body">
 
 
-                <form method="GET" class=" d-flex align-items-center gap-3">
+                <form method="GET" class=" ">
                     <!-- <div>
                         <input type="text" name="hotel-filter">
 
                         <button class="  btn btn-primary"> Cerca</button>
                     </div> -->
-                    <div class="form-check ">
+                    <div class="mb-3">
+                        <label for="vote_filter" class="form-label">Voto</label>
+                        <input type="number" class="form-control" id="vote_filter" name="vote_filter" min="1" max="5">
+                    </div>
+
+                    <div class="form-check d-flex align-items-center gap-3 mb-3">
                         <input class="form-check-input" type="checkbox" value="" id="check-parking" name="check-parking"
                             <?= $filter_parcking ? 'checked' : '' ?>>
                         <label class="form-check-label" for="check-parking">
                             con parcheggio
                         </label>
                     </div>
+
+
 
                     <button class="  btn btn-primary"> Filtra</button>
 
